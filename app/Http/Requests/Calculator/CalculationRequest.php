@@ -20,7 +20,9 @@ class CalculationRequest extends FormRequest
     public function rules()
     {
         return [
-            
+            'operand_1' => 'required|numeric',
+            'operand_2' => 'required|numeric',
+            'operator' => 'required',
         ];
     }
 }
